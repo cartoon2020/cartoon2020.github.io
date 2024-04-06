@@ -1,0 +1,274 @@
+.container{
+/*    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;*/
+}
+ul,li{
+    list-style: none;
+    margin: 0 ;
+    padding: 0;
+}
+header{
+    display: block;
+    position: relative;
+}
+.tips, .tips .box{
+    position: relative;
+    display: block;
+    padding: 0;
+}
+.tips .box{
+    overflow: hidden;
+    width: 94%;
+    margin: 1rem auto 0;
+    border: 1px solid #fff;
+    border-radius: 26px;
+    background: #fb3;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+}
+.tips .box .fl{
+    float: left;
+    margin: 5px 10px;
+    width: 50px;
+    height: 50px;
+}
+.tips .box .fl img{
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+.tips .box .fr{
+    position: absolute;
+    top: 0;
+    left: 60px;
+    float: left;
+    margin: .2rem .4rem;
+    width: auto;
+    line-height: 1rem;
+}
+.tips .box .fr p{
+    margin: .1rem 0;
+}
+.tips .box .fr p.t1{
+    color: #fff;
+    font-size: .6rem;
+}
+.tips .box .fr p.t2{
+    color: #fafafa;
+    font-size: .5rem;
+}
+header a.close{
+    position: absolute;
+    right: 1rem;
+    bottom: .1rem;
+    display: block;
+    margin: 0 auto;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #EFEFF4 url(./icon_close_2.png) no-repeat center center;
+    background-size: 13px;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+    border: 2px solid #fff;
+    z-index: 5;
+}
+.notfoud{
+    display: block;
+    overflow: hidden;
+    margin: .8rem 5%;
+    padding: 0;
+    width: 90%;
+    border-right: 1px solid #eee;
+    border-left: 1px solid #eee;
+    border-radius: 4px;
+    background: #fff;
+}
+.notfoud .radius{
+    border: 0px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,.1);
+}
+.notfoud h1{
+    width: 100%;
+    margin: 0px auto 10px;
+    display: block;
+    text-align: center;
+    background: #ddd;
+    color: #333;
+    font-size: .8rem;
+    line-height: 40px;
+    height: 40px;
+    top: 0px;
+    right: 0px;
+    position: relative;
+}
+.notfoud .tipsurl{
+    margin: 0px auto;
+    width: 100%;
+    display: block;
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0px;
+}
+.notfoud .ewm{
+    display: block;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    padding: 0;
+}
+.notfoud .ewm, .notfoud .ewm img{
+    width: 150px;
+    height: 150px;
+}
+.notfoud div.tisp{
+    color: #262b31;
+    line-height: 1.875rem;
+}
+.notfoud div{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.notfoud div.tisp p{
+    display: block;
+    width: 100%;
+    color: #666;
+    text-align: center;
+    font-size: .7rem;
+}
+.notfoud div.tisp p b{
+    color: #f30;
+}
+.notfoud .urllink{
+    margin: 10px auto;
+    width: 90%;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+}
+.notfoud .urllink li{
+    display: block;
+}
+.notfoud .urllink li.link1{
+    float: left;
+    width: 70%;
+}
+.notfoud .urllink li.link2{
+    float: right;
+    width: 30%;
+}
+.notfoud .urllink li.link1 a{
+    text-align: left;
+    display: inline-block;
+    text-indent: 5px;
+    line-height: 1.5rem;
+    color: #333;
+    font-size: .8rem;
+    background: url(./icon_link.png) no-repeat 10px center;
+    background-size: 14px 14px;
+    margin-right: 1%;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 0 .5rem;
+    overflow: hidden;
+    width: 90%;
+}
+.notfoud .urllink li.link1 a i{
+    border-left: 1px solid #ccc;
+    display: block;
+    left: 20px;
+    position: relative;
+    overflow: hidden;
+    font-style: normal;
+    vertical-align: middle;
+    font-size: .7rem;
+}
+.notfoud .urllink li.link2 a{
+    text-align: center;
+    display: inline-block;
+    color: #555;
+    line-height: 1.5rem;
+    font-size: .7rem;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    padding: 0 .5rem;
+    overflow: hidden;
+}
+#btnCopy{
+    cursor: pointer;
+}
+.notfoud div.downtis{
+    text-align: center;
+    font-size: .5rem;
+    color: #F66;
+    margin: .1rem 0;
+}
+.notfoud footer{
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+    width: 100%;
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    color: #999;
+    background: #F9F9F9;
+    overflow: hidden;
+}
+.notfoud footer i, .notfoud footer em, .notfoud footer b{
+    margin: 0px 2px;
+    width: 20px;
+    height: 30px;
+    background: url(./s1.png) no-repeat center center;
+    background-size: 100% auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.notfoud footer b{
+    background: url(./icon_ios.png) no-repeat center center;
+    background-size: 14px 14px;
+}
+.notfoud footer em{
+    background: url(./s2.png) no-repeat center center;
+    background-size: 100% auto;
+}
+.qqkf{
+    width: 100%;
+    height: 100px;
+    display: block;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.qqkf a{
+    width: 100%;
+    margin: auto;
+    display: block;
+    height: 26px;
+    line-height: 22px;
+    width: 80px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #FAFAFA;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+}
+.qqkf a i{
+    float: left;
+    height: 22px;
+    width: 24px;
+    display: inline-block;
+    background: url(./qq_2.png) no-repeat right bottom;
+    background-size: 20px;
+}
+.qqkf span{
+    font-size: 12px;
+    color: #333;
+    vertical-align: middle;
+}
